@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "bmgmvqmz",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "SpaceHub"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "@sanity/code-input"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
