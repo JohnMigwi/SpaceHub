@@ -8,7 +8,7 @@ import blog from './documents/blog';
 import author from './documents/author';
 
 // import custom objects
-import customImage from './objects/customimage';
+import customImage from './objectsadd/customimage';
 
 export default createSchema({
   name: 'default',
