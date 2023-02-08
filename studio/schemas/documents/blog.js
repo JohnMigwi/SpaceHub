@@ -31,6 +31,11 @@ export default {
       name: 'coverImage',
       type: 'customImage',
     },
+    {
+      title: 'Blog Body',
+      name: 'body',
+      type: 'bodyText',
+    },
   ],
   preview: {
     select: {
