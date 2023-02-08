@@ -20,5 +20,24 @@ export default {
         maxLength: 96,
       },
     },
+    {
+      title: 'Profile Image',
+      name: 'profileImage',
+      type: 'customImage',
+    },
   ],
+  preview: {
+    select: {
+      title: 'name',
+      Image: 'profileImage',
+      slug: 'slug',
+    },
+    prepare({ title, Image, slug }) {
+      return {
+        title,
+        media: Image,
+        subtitle: slug.current,
+      };
+    },
+  },
 };
