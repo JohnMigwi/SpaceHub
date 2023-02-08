@@ -38,16 +38,17 @@ export default {
                 name: 'href',
                 type: 'url',
               },
+              { title: 'Note', name: 'note', type: 'string' },
             ],
           },
         ],
       },
     },
-    /* {
-      type: 'customCode',
-    },
+    // {
+    // type: 'customCode',
+    // },
     {
       type: 'customImage',
-    }, */
+    },
   ],
 };
