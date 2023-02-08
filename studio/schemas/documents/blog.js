@@ -36,14 +36,14 @@ export default {
     select: {
       image: 'coverImage',
       title: 'title',
-      publishedAt: 'publishedAt',
+      PublishedAt: 'PublishedAt',
     },
-    prepare({ image, title, publishedAt }) {
+    prepare({ image, title, PublishedAt }) {
       return {
         title,
         media: image,
-        subtitle: publishedAt
-          ? format(new Date(publishedAt), 'p, dd/MM/yyy')
+        subtitle: PublishedAt
+          ? format(new Date(PublishedAt), 'p, dd/MM/yyy')
           : '',
       };
     },
