@@ -10,8 +10,9 @@ import author from './documents/author';
 // import custom objects
 import customImage from './objectsadd/customimage';
 import bodyText from './objectsadd/bodyText';
+import customCode from './objectsadd/customCode';
 
 export default createSchema({
   name: 'default',
-  types: schemaTypes.concat([blog, author, customImage, bodyText]),
+  types: schemaTypes.concat([blog, author, customImage, bodyText, customCode]),
 });
