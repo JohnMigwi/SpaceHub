@@ -41,7 +41,7 @@ export default {
       return {
         title,
         media: Image,
-        subTitle: slug.current,
+        subtitle: slug.current,
       };
     },
   },
