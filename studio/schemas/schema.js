@@ -13,6 +13,7 @@ import customImage from './objectsadd/customimage';
 import bodyText from './objectsadd/bodyText';
 import customCode from './objectsadd/customCode';
 import excerptText from './objectsadd/excerptText';
+import featured from './documents/featured';
 
 export default createSchema({
   name: 'default',
@@ -21,6 +22,7 @@ export default createSchema({
     blog,
     author,
     category,
+    featured,
 
     // objects
     customImage,
