@@ -10,6 +10,9 @@ function Sidebar() {
         .id('featuredItems')
         .icon(MdStar)
         .child(S.editor().schemaType('featured').documentId('featuredItems')),
+      ...S.documentTypeListItems().filter(
+        (item) => item.getId() !== 'featured'
+      ),
     ]);
 }
 
