@@ -51,12 +51,12 @@ export default {
     {
       title: 'Excerpt',
       name: 'excerpt',
-      type: 'excerptText',
+      type: 'normalText',
     },
     {
       title: 'Blog Body',
       name: 'body',
-      type: 'bodyText',
+      type: 'richText',
     },
   ],
   preview: {

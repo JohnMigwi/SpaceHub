@@ -10,9 +10,9 @@ import category from './documents/category';
 
 // import custom objects
 import customImage from './objectsadd/customimage';
-import bodyText from './objectsadd/bodyText';
+import richText from './objectsadd/richText';
 import customCode from './objectsadd/customCode';
-import excerptText from './objectsadd/excerptText';
+import normalText from './objectsadd/normalText';
 import featured from './documents/featured';
 
 export default createSchema({
@@ -26,8 +26,8 @@ export default createSchema({
 
     // objects
     customImage,
-    bodyText,
+    richText,
     customCode,
-    excerptText,
+    normalText,
   ]),
 });
