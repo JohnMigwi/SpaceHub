@@ -52,6 +52,7 @@ export default {
       title: 'Excerpt',
       name: 'excerpt',
       type: 'normalText',
+      description: 'What the article entails',
     },
     {
       title: 'Blog Body',
