@@ -41,7 +41,7 @@ export default {
       title: 'Author',
       name: 'author',
       type: 'reference',
-      to: [{ type: 'authohr' }],
+      to: [{ type: 'author' }],
     },
     {
       title: 'Cover Image',
