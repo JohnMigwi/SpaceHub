@@ -28,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.5;
     width: 100%;
     font-family: 'Inter';
-    background: var(--black-1);
+    background: var(--black-2);
     color: var(--white);
   }
   a{
