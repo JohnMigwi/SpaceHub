@@ -1,6 +1,10 @@
 import React from 'react';
-import GlobalStyles from '../styles/GlobalStyles';
 import Header from './Header';
+import GlobalStyles from '../styles/GlobalStyles';
+import 'normalize.css/normalize.css';
+import Footer from './Footer';
+// import Search from './search/SearchModal';
+// import { SearchModalContextProvider } from '../contexts/searchModalContext';
 
 function Layout({ children }) {
   return (
@@ -8,8 +12,10 @@ function Layout({ children }) {
       <GlobalStyles />
       <Header />
       {children}
+      <Footer />
     </>
   );
 }
 
 export default Layout;
+<Footer />;
