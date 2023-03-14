@@ -6,5 +6,9 @@ module.exports = {
     siteUrl: `https://spacehub-blog.netlify.com`,
     description: `SpaceHub Blog is a platform for latest technology news and updates.`,
   },
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+  ],
 };
