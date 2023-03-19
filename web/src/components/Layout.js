@@ -8,7 +8,7 @@ import { SearchModalContextProvider } from '../context/searchModalContext';
 
 function Layout({ children }) {
   return (
-    <SearchModalConxtProvider>
+    <SearchModalContextProvider>
       <GlobalStyles />
 
       <Header />
