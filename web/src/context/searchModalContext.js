@@ -8,7 +8,7 @@ const SearchModalContextProvider = ({ children }) => {
     () => ({
       isSearchModalOpen,
       openSearchModal: () => {
-        setIsSearchModalOpen(true);
+        IsSearchModalOpen(true);
       },
       closeSearchModal: () => {
         setIsSearchModalOpen(false);
