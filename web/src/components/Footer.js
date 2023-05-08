@@ -4,7 +4,7 @@ import { menu } from '../constants/menu';
 import { socialLinks } from '../constants/socialLinks';
 import { FooterStyles } from '../styles/FooterStyles';
 import Logo from './logo';
-import ParagraphText from './typography/paragraphtext';
+import ParagraphText from './typography/ParagraphText';
 
 function Footer() {
   return (
@@ -32,7 +32,7 @@ function Footer() {
           ))}
         </ul>
         <ParagraphText className="copyright">
-          © SpaceHub-Blog Creative {new Date().getFullYear()}. All rights
+          © TechHub-Blog Creative {new Date().getFullYear()}. All rights
           reserved
         </ParagraphText>
       </div>
