@@ -2,7 +2,7 @@ import React from 'react';
 import { GrTechnology } from 'react-icons/gr';
 import LogoStyles from '../styles/LogoStyles';
 
-function logo() {
+function Logo() {
   return (
     <LogoStyles>
       <GrTechnology />
@@ -10,4 +10,4 @@ function logo() {
   );
 }
 
-export default logo;
+export default Logo;
