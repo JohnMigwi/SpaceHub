@@ -1,7 +1,7 @@
 import React from 'react';
 
-function index() {
-  return 'HELLO WORLD!';
-}
+const IndexPage = () => null;
 
-export default index;
+
+
+export default IndexPage;
