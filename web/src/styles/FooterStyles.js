@@ -37,7 +37,7 @@ export const FooterStyles = styled.footer`
       }
     }
   }
-  .copyright {
+  .copy {
     margin-top: 1rem;
     color: var(--gray);
     font-size: 1.2rem;
