@@ -6,7 +6,8 @@ import { SearchModalContext } from '../../context/searchModalContext';
 import SearchField from './SearchField';
 
 function Search() {
-  const { isSearchModalOpen, closeSearchModal } = useContext(SearchModalContext);
+  const { isSearchModalOpen, closeSearchModal } =
+    useContext(SearchModalContext);
   const { searchQuery, setSearchQuery } = useState('');
 
   const handleOnFocus = () => {
