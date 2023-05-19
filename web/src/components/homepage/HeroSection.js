@@ -20,7 +20,7 @@ function HeroSection() {
               content here', making it look like readable
             </ParagraphText>
             <Button to="/blogs" tag={Link} className="hero__button">
-              Space Blogs
+              All Blogs
             </Button>
           </div>
           <div className="right">
