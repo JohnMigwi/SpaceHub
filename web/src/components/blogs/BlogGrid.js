@@ -8,15 +8,14 @@ function BlogGrid({ blogs }) {
       {blogs &&
         blogs.map((blog) => (
           <BlogItem
+            key={blog.id}
+            path={blog.slug.current}
             title={blog.title}
-            // path={blog.slug.current}
-            categories={blog.catogories}
-            image={
-              {
-                // ImageData: blog.coverImage.asset.gatsbyImageData,
-                // altText: blog.coverImage.alt,
-              }
-            }
+            categories={blog.categories}
+            image={{
+              imageData: blog.coverImage.asset.gatsbyImageData,
+              altText: blog.coverImage.alt,
+            }}
             publishedAt={blog.publishedAt}
           />
         ))}
