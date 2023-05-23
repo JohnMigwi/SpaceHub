@@ -1,10 +1,56 @@
+import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
+import { FeaturedBlogsStyles } from '../../styles/homePage/FeaturedBlogsStyles';
+import ParagraphText from '../typography/ParagraphText';
+import { SectionTitle } from '../typography/Title';
+import BlogGrid from '../blogs/BlogGrid';
 
 function FeaturedBlogs() {
+  const data = useStaticQuery(graphql`
+    {
+      allSanityFeatured(filter: { _id: { eq: "featuredItems" } }) {
+        nodes {
+          blogs {
+            title
+            id
+            PublishedAt
+            categories {
+              title
+              slug {
+                current
+              }
+              coverImage {
+                alt
+                asset {
+                  gatsbyImageData
+                }
+              }
+              slug {
+                current
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+ 
+
+  const featuredBlogs = data.allSanityFeatured.nodes[0].blogs;
+  console.log(featuredBlogs);
+
   return (
-    <div>
-      FeaturedBlogs BETTER WORK THIS TIME HOW LONG DO YOU TAKETO LOAD MAHN
-    </div>
+    <FeaturedBlogsStyles>
+      <SectionTitle>FeaturedBlogs</SectionTitle>
+      <ParagraphText>
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout. The point of
+        using Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as opposed to using 'Content here, content here', making it
+        look like readable
+      </ParagraphText>
+      <BlogGrid blogs={featuredBlogs} />
+    </FeaturedBlogsStyles>
   );
 }
 

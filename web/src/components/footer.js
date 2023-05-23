@@ -4,7 +4,7 @@ import { menu } from '../constants/menu';
 import { FooterStyles } from '../styles/FooterStyles';
 import Logo from './Logo';
 
-import ParagraphText from './typography/paragraphText';
+import ParagraphText from './typography/ParagraphText';
 import { Socials } from '../constants/Socials';
 
 function Footer() {

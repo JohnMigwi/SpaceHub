@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { HeroSectionStyles } from '../../styles/homePage/HeroSectionStyles';
-import ParagraphText from '../typography/paragraphText';
+import ParagraphText from '../typography/ParagraphText';
 import Button from '../buttons/Button';
 
 function HeroSection() {
