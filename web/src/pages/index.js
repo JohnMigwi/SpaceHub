@@ -2,6 +2,7 @@ import React from 'react';
 import HeroSection from '../components/homepage/HeroSection';
 import SEO from '../components/seo';
 import FeaturedBlogs from '../components/homepage/FeaturedBlogs';
+import TopCategories from '../components/homepage/TopCategories';
 
 const IndexPage = () => (
   <>
@@ -9,6 +10,7 @@ const IndexPage = () => (
     <HeroSection />
     <div className="container">
       <FeaturedBlogs />
+      <TopCategories />
     </div>
   </>
 );

@@ -8,6 +8,7 @@ function BlogGrid({ blogs }) {
       {blogs &&
         blogs.map((blog) => (
           <BlogItem
+            key={blog.id}
             title={blog.title}
             path={blog.categories[0].slug.current}
             categories={blog.categories}
