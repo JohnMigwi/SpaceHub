@@ -34,11 +34,7 @@ function FeaturedBlogs() {
       }
     }
   `);
- 
-
   const featuredBlogs = data.allSanityFeatured.nodes[0].blogs;
-  console.log(featuredBlogs);
-
   return (
     <FeaturedBlogsStyles>
       <SectionTitle>FeaturedBlogs</SectionTitle>

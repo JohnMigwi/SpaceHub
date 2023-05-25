@@ -4,21 +4,16 @@ import { format } from 'date-fns';
 import React from 'react';
 import { BlogItemStyles } from '../../styles/blog/BlogItemStyles';
 import ParagraphText from '../typography/ParagraphText';
-import { SectionTitle } from '../typography/Title';
+import { Title } from '../typography/Title';
 
-function BlogItem({ path, title, image, categories, publishedAt }) {
+function BlogItem({ path, title, image, myimg, categories, publishedAt }) {
   return (
     <BlogItemStyles>
       <Link to={`/blogs/${path}`}>
-        {/* <GatsbyImage
-          image={image.imageData}
-          alt={image.altText}
-          className="img"
-        /> */}
-        <img src={image.ImageData} alt={image.altText} className="img" />
+        <GatsbyImage image={myimg} alt={image.altText} className="img" />
       </Link>
       <Link to={`/blogs/${path}`}>
-        <SectionTitle className="title">{title}</SectionTitle>
+        <Title className="title">{title}</Title>
       </Link>
       {publishedAt && (
         <ParagraphText className="publishedAt">

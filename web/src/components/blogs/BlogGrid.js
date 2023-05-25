@@ -11,10 +11,8 @@ function BlogGrid({ blogs }) {
             title={blog.title}
             path={blog.categories[0].slug.current}
             categories={blog.categories}
+            myimg={blog.categories[0].coverImage.asset.gatsbyImageData}
             image={{
-              ImageData:
-                blog.categories[0].coverImage.asset.gatsbyImageData.images
-                  .fallback.src,
               altText: blog.categories[0].coverImage.alt,
             }}
             publishedAt={blog.publishedAt}
