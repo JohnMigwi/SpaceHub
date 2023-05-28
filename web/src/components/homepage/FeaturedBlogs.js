@@ -33,10 +33,6 @@ function FeaturedBlogs() {
       }
     }
   `);
-
-  console.log('this is the wrong query');
-  console.log(data);
-  console.log('this is the wrong query');
   const featuredBlogs = data.allSanityFeatured.nodes[0].blogs;
   return (
     <FeaturedBlogsStyles>

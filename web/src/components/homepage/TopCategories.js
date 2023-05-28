@@ -24,7 +24,6 @@ function TopCategories() {
   `);
 
   const category = data2.allSanityFeatured.nodes[0].categories;
-  console.log(category);
   return (
     <TopCategoriesStyles>
       <SectionTitle>Top Categories</SectionTitle>

@@ -17,7 +17,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   if (result.errors) throw result.errors;
   const blogs = result.data.allSanityBlog.nodes;
-
+  console.log('this is the result');
   console.log(result);
 
   // Each blog page

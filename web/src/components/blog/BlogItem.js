@@ -6,10 +6,7 @@ import { BlogItemStyles } from '../../styles/blog/BlogItemStyles';
 import ParagraphText from '../typography/ParagraphText';
 import { Title } from '../typography/Title';
 
-function BlogItem({ path, title, imageData, image, categories, publishedAt }) {
-  console.log('my image link');
-  console.log(image.imageData);
-  console.log('my image link');
+function BlogItem({ path, title, image, categories, publishedAt }) {
   return (
     <BlogItemStyles>
       <Link to={`/blogs/${path}`}>
