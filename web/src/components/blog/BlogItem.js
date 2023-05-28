@@ -6,11 +6,18 @@ import { BlogItemStyles } from '../../styles/blog/BlogItemStyles';
 import ParagraphText from '../typography/ParagraphText';
 import { Title } from '../typography/Title';
 
-function BlogItem({ path, title, image, myimg, categories, publishedAt }) {
+function BlogItem({ path, title, imageData, image, categories, publishedAt }) {
+  console.log('my image link');
+  console.log(image.imageData);
+  console.log('my image link');
   return (
     <BlogItemStyles>
       <Link to={`/blogs/${path}`}>
-        <GatsbyImage image={myimg} alt={image.altText} className="img" />
+        <GatsbyImage
+          image={image.imageData}
+          alt={image.altText}
+          className="img"
+        />
       </Link>
       <Link to={`/blogs/${path}`}>
         <Title className="title">{title}</Title>
@@ -31,5 +38,4 @@ function BlogItem({ path, title, image, myimg, categories, publishedAt }) {
     </BlogItemStyles>
   );
 }
-
 export default BlogItem;

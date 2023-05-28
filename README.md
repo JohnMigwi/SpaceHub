@@ -1,7 +1,7 @@
 
 # Space-Hub
 
-A complete blog that im creating  with `JAMstack`.
+A complete blog that I'm creating  with `JAMstack`.
 ---
 
 ## Details
