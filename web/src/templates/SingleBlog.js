@@ -4,7 +4,7 @@ import React from 'react';
 import { format } from 'date-fns';
 import { BiCategory } from 'react-icons/bi';
 import { FiCalendar, FiUser } from 'react-icons/fi';
-//import PageSpace from '../components/PageSpace';
+import PageSpace from '../components/PageSpace';
 import ParagraphText from '../components/typography/ParagraphText';
 import { Title } from '../components/typography/Title';
 import { SingleBlogStyles } from '../styles/blog/SingleBlogStyles';
