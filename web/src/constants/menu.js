@@ -5,7 +5,7 @@ export const menu = [
   },
   {
     title: 'Blogs',
-    path: '/blog',
+    path: '/blogs',
   },
   {
     title: 'Categories',
