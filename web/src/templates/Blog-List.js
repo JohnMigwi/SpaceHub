@@ -65,11 +65,3 @@ function Blogs({ data, pageContext }) {
 }
 
 export default Blogs;
-
-// import React from 'react';
-
-// function Blog() {
-//   return <div>Blog-List</div>;
-// }
-
-// export default Blog;
