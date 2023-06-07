@@ -8,7 +8,11 @@ import PageSpace from '../components/PageSpace';
 import SEO from '../components/seo';
 import { SingleCategoryStyles } from '../styles/category/SingleCategoryStyles';
 
-
+export const query = graphql`
+  query SingleCategory($id: String!) {
+    sanityCategory(id: { eq: $id }) {
+      title
+      _rawDescription
       coverImage {
         asset {
           gatsbyImageData
