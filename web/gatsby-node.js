@@ -13,6 +13,10 @@ exports.createPages = async ({ graphql, actions }) => {
     './src/templates/SingleCategory.js'
   );
 
+  const singleAuthorTemplate = require.resolve('./src/templates/Eachauthor.js');
+
+  const AllAuthorsTemplate = require.resolve('./src/templates/AllAuthors.js');
+
   const { createPage } = actions;
   const result = await graphql(`
     {
@@ -32,6 +36,14 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      allSanityAuthor {
+        nodes {
+          id
+          slug {
+            current
+          }
+        }
+      }
     }
   `);
 
@@ -39,6 +51,8 @@ exports.createPages = async ({ graphql, actions }) => {
   const blogs = result.data.allSanityBlog.nodes;
 
   const categories = result.data.allSanityCategory.nodes;
+
+  const authors = result.data.allSanityAuthor.nodes;
 
   // a single category to display component
 
@@ -73,7 +87,7 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
-  // category paginated pages
+  // categories
   const totalCategoryListPages = Math.ceil(categories.length / postsPerPage);
   Array.from({ length: totalCategoryListPages }).forEach((_, index) => {
     createPage({
@@ -83,6 +97,29 @@ exports.createPages = async ({ graphql, actions }) => {
         limit: postsPerPage,
         offset: index * postsPerPage,
         numberOfPages: totalCategoryListPages,
+        currentPage: index + 1,
+      },
+    });
+  });
+  // single Author pages
+  authors.forEach((author) => {
+    createPage({
+      path: `/authors/${author.slug.current}`,
+      component: singleAuthorTemplate,
+      context: { id: author.id },
+    });
+  });
+
+  // Authors
+  const totalAllAuthorsTemplate = Math.ceil(authors.length / postsPerPage);
+  Array.from({ length: totalAllAuthorsTemplate }).forEach((_, index) => {
+    createPage({
+      path: index === 0 ? `/authors` : `/authors/${index + 1}`,
+      component: AllAuthorsTemplate,
+      context: {
+        limit: postsPerPage,
+        offset: index * postsPerPage,
+        numberOfPages: totalAllAuthorsTemplate,
         currentPage: index + 1,
       },
     });
