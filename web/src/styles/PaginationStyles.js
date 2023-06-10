@@ -20,7 +20,7 @@ export const PaginationStyles = styled.div`
       svg {
         padding: 0;
         margin: 0;
-      }
+    
       &.disabled {
         opacity: 0.2;
         pointer-events: none;
