@@ -11,7 +11,7 @@ function Search() {
   const { searchQuery, setSearchQuery } = useState('');
 
   const handleOnFocus = () => {
-    console.log('focused');
+    // console.log('focused');
   };
 
   if (!isSearchModalOpen) return null;

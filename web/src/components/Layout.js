@@ -9,7 +9,6 @@ function Layout({ children }) {
   return (
     <SearchModalContextProvider>
       <GlobalStyles />
-      <Search />
       <Header />
       {children}
       <Footer />
