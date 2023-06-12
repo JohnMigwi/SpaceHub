@@ -12,7 +12,7 @@ export const menu = [
     path: '/categories',
   },
   {
-    title: 'Authors',
+    title: 'Freelancing',
     path: '/authors',
   },
 ];
