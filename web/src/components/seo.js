@@ -23,7 +23,7 @@ function SEO({ title, description }) {
   };
 
   return (
-    <Helmet title>
+    <Helmet>
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
     </Helmet>

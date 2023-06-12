@@ -34,10 +34,7 @@ function AuthorList({ data, pageContext }) {
     <PageSpace top={80} bottom={100}>
       <SEO title="Authors" />
       <div className="container">
-        <PageHeader
-          title="Authors"
-          description="Find an Author and all His/Her Works"
-        />
+        <PageHeader title="Author" description="Learn About John" />
         <AuthorGrid authors={authors} />
         {numberOfPages > 1 && (
           <Pagination

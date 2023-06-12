@@ -46,10 +46,7 @@ function Blogs({ data, pageContext }) {
       <SEO title="Blogs" />
       <PageSpace top={80} bottom={100}>
         <div className="container">
-          <PageHeader
-            title="All Blog Posts"
-            description="This month will bring about the 88th Academy Awards. Starting in 1928, this prestigious award ceremony..."
-          />
+          <PageHeader title="All Blog Posts" description="." />
           <BlogGrid blogs={blogs} />
           {numberOfPages > 1 && (
             <Pagination

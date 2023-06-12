@@ -13,8 +13,7 @@ function HeroSection() {
           <div className="left">
             <h1 className="hero__heading">Explore Space World</h1>
             <ParagraphText className="hero__text">
-              The point of using Lorem Ipsum is that it has a more-or-less
-              normal distribution of letters
+              Get Some Coffee !
             </ParagraphText>
             <Button to="/blogs" tag={Link} className="hero__button">
               All Blogs
