@@ -44,5 +44,9 @@
   "devDependencies": {
     "dotenv": "^16.0.0",
     "lmdb-store": "^1.6.14"
+  },
+  "engines": {
+    "node": "18.15.0"
   }
+  
 }
