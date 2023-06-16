@@ -13,7 +13,7 @@ function HeroSection() {
           <div className="left">
             <h1 className="hero__heading">Explore Space World</h1>
             <ParagraphText className="hero__text">
-              Get Some Coffee !
+              Get Some Coffee !!
             </ParagraphText>
             <Button to="/blogs" tag={Link} className="hero__button">
               All Blogs
