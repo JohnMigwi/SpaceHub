@@ -1,7 +1,7 @@
 
 # Space-Hub
 
-A complete blog that I'm creating  with `JAMstack`.
+A complete blog site with `JAMstack`.
 ---
 ![Screenshot how it looks like](./Bannr.png)
 ## Details

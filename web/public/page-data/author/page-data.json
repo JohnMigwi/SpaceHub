@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-all-authors-js",
+    "path": "/author",
+    "result": {"data":{"allSanityAuthor":{"nodes":[{"id":"-e25b7bfe-0730-5c4a-9c1e-35aabc4cc128","name":"John","slug":{"current":"john"},"profileImage":{"alt":"Author","asset":{"gatsbyImageData":{"images":{"sources":[],"fallback":{"src":"https://cdn.sanity.io/images/bmgmvqmz/production/9c2419bf97505c75dce9392da8b7ed767a8aff3a-466x960.jpg?w=466&h=960&auto=format","srcSet":"https://cdn.sanity.io/images/bmgmvqmz/production/9c2419bf97505c75dce9392da8b7ed767a8aff3a-466x960.jpg?w=320&h=659&auto=format 320w,\nhttps://cdn.sanity.io/images/bmgmvqmz/production/9c2419bf97505c75dce9392da8b7ed767a8aff3a-466x960.jpg?w=466&h=960&auto=format 466w","sizes":"(min-width: 466px) 466px, 100vw"}},"layout":"constrained","backgroundColor":"#a1c0d2","width":466,"height":960}}}}]}},"pageContext":{"limit":3,"offset":0,"numberOfPages":1,"currentPage":1}},
+    "staticQueryHashes": ["196044662"]}
