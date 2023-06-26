@@ -5,7 +5,7 @@
   "description": "spaceHub",
   "author": "John Migwi",
   "keywords": [
-    "gatsb"
+    "gatsby"
   ],
   "scripts": {
     "dev": "gatsby develop",
